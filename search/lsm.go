@@ -2,7 +2,8 @@ package search
 
 import (
 	"fmt"
-	"go-algorithm/cerror"
+
+	"github.com/frappuccino2316/go-algorithm/cerror"
 )
 
 func Lsm(a []int, b int) (int, error) {

@@ -1,13 +1,13 @@
 package cerror
 
 type NothingError struct {
-	message string
+	Message string
 }
 
 func (e *NothingError) Error() string {
-	return e.message
+	return e.Message
 }
 
 func RaiseError() error {
-	return &NothingError{message: "存在しませんでした"}
+	return &NothingError{Message: "存在しませんでした"}
 }

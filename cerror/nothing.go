@@ -1,4 +1,4 @@
-package err
+package cerror
 
 type NothingError struct {
 	message string

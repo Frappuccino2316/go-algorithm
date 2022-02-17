@@ -2,10 +2,10 @@ package search
 
 import (
 	"fmt"
-	"go-algorithm/err"
+	"go-algorithm/cerror"
 )
 
-func lsm(a []int, b int) (int, error) {
+func Lsm(a []int, b int) (int, error) {
 	fmt.Printf("target: %v\n", a)
 	fmt.Printf("search: %v\n", b)
 
@@ -16,5 +16,5 @@ func lsm(a []int, b int) (int, error) {
 		}
 		continue
 	}
-	return -1, err.RaiseError()
+	return -1, cerror.RaiseError()
 }

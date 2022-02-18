@@ -7,7 +7,7 @@ package search
 // 	"github.com/frappuccino2316/go-algorithm/cerror"
 // )
 
-func Hashing(a []int, b int) []int {
+func Hashing(a []int) []int {
 	length := len(a)
 	var h []int
 	for _, n := range a {

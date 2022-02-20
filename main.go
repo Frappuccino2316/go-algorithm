@@ -10,7 +10,7 @@ import (
 
 // 単純選択法 Simple selection method
 func main() {
-	a := []int{3, 4, 1, 5, 2}
+	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
 	b := sort.Ssm(a)
 
 	fmt.Printf("result: %v\n", b)

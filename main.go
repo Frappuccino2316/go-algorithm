@@ -4,27 +4,35 @@ import (
 	"fmt"
 
 	// "github.com/frappuccino2316/go-algorithm/cerror"
-	"github.com/frappuccino2316/go-algorithm/cerror"
-	"github.com/frappuccino2316/go-algorithm/search"
+	// "github.com/frappuccino2316/go-algorithm/search"
+	"github.com/frappuccino2316/go-algorithm/sort"
 )
 
-// ハッシュ探索法 hashing method
+// 単純選択法 Simple selection method
 func main() {
-	a := []int{1, 8, 11, 15, 17, 18, 21, 37}
-	h := search.Hashing(a)
+	a := []int{3, 4, 1, 5, 2}
+	b := sort.Ssm(a)
 
-	i, err := search.Hm(h, 15)
-
-	if err != nil {
-		e, ok := err.(*cerror.NothingError)
-		if ok {
-			fmt.Println(e.Message)
-		}
-	} else {
-		fmt.Printf("index: %v\n", i)
-		fmt.Printf("value: %v\n", h[i])
-	}
+	fmt.Printf("result: %v\n", b)
 }
+
+// ハッシュ探索法 hashing method
+// func main() {
+// 	a := []int{1, 8, 11, 15, 17, 18, 21, 37}
+// 	h := search.Hashing(a)
+
+// 	i, err := search.Hm(h, 15)
+
+// 	if err != nil {
+// 		e, ok := err.(*cerror.NothingError)
+// 		if ok {
+// 			fmt.Println(e.Message)
+// 		}
+// 	} else {
+// 		fmt.Printf("index: %v\n", i)
+// 		fmt.Printf("value: %v\n", h[i])
+// 	}
+// }
 
 // 二分探索法 Binary search method
 // func main() {

@@ -8,13 +8,21 @@ import (
 	"github.com/frappuccino2316/go-algorithm/sort"
 )
 
-// 単純交換法　Bubble sort
+// 単純挿入法 Simple insertion method
 func main() {
-	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
-	b := sort.Bubble(a)
+	a := []int{3, 45, 13, 45, 2, 99, 50}
+	b := sort.Sim(a)
 
 	fmt.Println(b)
 }
+
+// 単純交換法　Bubble sort
+// func main() {
+// 	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
+// 	b := sort.Bubble(a)
+
+// 	fmt.Println(b)
+// }
 
 // 単純選択法 Simple selection method
 // func main() {

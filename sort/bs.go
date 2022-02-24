@@ -1,6 +1,10 @@
 package sort
 
-func Bubble(a []int) []int {
+import (
+	. "github.com/frappuccino2316/go-algorithm/type"
+)
+
+func Bubble(a Ints) []int {
 	length := len(a)
 
 	for i := 0; i < length; i++ {
@@ -13,9 +17,7 @@ func Bubble(a []int) []int {
 				min = a[j]
 			}
 		}
-		current := a[i]
-		a[i] = min
-		a[index] = current
+		a.Swap(i, index)
 	}
 
 	return a

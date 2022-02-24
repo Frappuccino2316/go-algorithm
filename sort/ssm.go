@@ -1,12 +1,10 @@
 package sort
 
-type ints []int
+import (
+	. "github.com/frappuccino2316/go-algorithm/type"
+)
 
-func (x ints) swap(i, j int) {
-	x[i], x[j] = x[j], x[i]
-}
-
-func Ssm(a ints) []int {
+func Ssm(a Ints) []int {
 	length := len(a)
 
 	for i := 0; i < length; i++ {
@@ -23,10 +21,7 @@ func Ssm(a ints) []int {
 				minIndex = j
 			}
 		}
-		// current := a[i]
-		// a[i] = min
-		// a[minIndex] = current
-		a.swap(i, minIndex)
+		a.Swap(i, minIndex)
 	}
 
 	return a

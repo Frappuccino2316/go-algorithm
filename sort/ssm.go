@@ -1,6 +1,12 @@
 package sort
 
-func Ssm(a []int) []int {
+type ints []int
+
+func (x ints) swap(i, j int) {
+	x[i], x[j] = x[j], x[i]
+}
+
+func Ssm(a ints) []int {
 	length := len(a)
 
 	for i := 0; i < length; i++ {
@@ -17,9 +23,10 @@ func Ssm(a []int) []int {
 				minIndex = j
 			}
 		}
-		current := a[i]
-		a[i] = min
-		a[minIndex] = current
+		// current := a[i]
+		// a[i] = min
+		// a[minIndex] = current
+		a.swap(i, minIndex)
 	}
 
 	return a

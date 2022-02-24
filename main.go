@@ -10,14 +10,14 @@ import (
 )
 
 // 単純挿入法 Simple insertion method
-func main() {
-	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
-	now := time.Now()
-	b := sort.Sim(a)
-	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
+// func main() {
+// 	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
+// 	now := time.Now()
+// 	b := sort.Sim(a)
+// 	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
 
-	fmt.Println(b)
-}
+// 	fmt.Println(b)
+// }
 
 // 単純交換法　Bubble sort
 // func main() {
@@ -30,14 +30,14 @@ func main() {
 // }
 
 // 単純選択法 Simple selection method
-// func main() {
-// 	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
-// 	now := time.Now()
-// 	b := sort.Ssm(a)
-// 	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
+func main() {
+	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
+	now := time.Now()
+	b := sort.Ssm(a)
+	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
 
-// 	fmt.Printf("result: %v\n", b)
-// }
+	fmt.Printf("result: %v\n", b)
+}
 
 // ハッシュ探索法 hashing method
 // func main() {

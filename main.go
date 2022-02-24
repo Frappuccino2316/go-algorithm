@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	// "github.com/frappuccino2316/go-algorithm/cerror"
 	// "github.com/frappuccino2316/go-algorithm/search"
@@ -11,7 +12,9 @@ import (
 // 単純挿入法 Simple insertion method
 func main() {
 	a := []int{3, 45, 13, 45, 2, 99, 50}
+	now := time.Now()
 	b := sort.Sim(a)
+	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
 
 	fmt.Println(b)
 }

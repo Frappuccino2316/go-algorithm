@@ -9,6 +9,16 @@ import (
 	"github.com/frappuccino2316/go-algorithm/sort"
 )
 
+// クイックソート　Quicksort
+func main() {
+	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
+	// a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23, 3, 12, 631, 341, 532, 9, 76, 835, 647, 87, 235, 17, 456, 7456, 43, 657654, 45, 3, 45, 654, 24, 4562, 647}
+	now := time.Now()
+	b := sort.Quicksort(a)
+	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
+	fmt.Println(b)
+}
+
 // 単純挿入法 Simple insertion method
 // func main() {
 // 	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
@@ -20,14 +30,14 @@ import (
 // }
 
 // 単純交換法　Bubble sort
-func main() {
-	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
-	now := time.Now()
-	b := sort.Bubble(a)
-	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
+// func main() {
+// 	a := []int{3, 45, 13, 84, 47, 65, 123, 542, 85, 99, 12, 1, 45, 26, 75, 23}
+// 	now := time.Now()
+// 	b := sort.Bubble(a)
+// 	fmt.Printf("秒数: %vms\n", time.Since(now).Milliseconds())
 
-	fmt.Println("result: ", b)
-}
+// 	fmt.Println("result: ", b)
+// }
 
 // 単純選択法 Simple selection method
 // func main() {

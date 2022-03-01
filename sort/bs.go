@@ -1,10 +1,10 @@
 package sort
 
 import (
-	. "github.com/frappuccino2316/go-algorithm/type"
+	t "github.com/frappuccino2316/go-algorithm/type"
 )
 
-func Bubble(a Ints) []int {
+func Bubble(a t.Ints) []int {
 	length := len(a)
 
 	for i := 0; i < length; i++ {

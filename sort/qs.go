@@ -1,10 +1,10 @@
 package sort
 
 import (
-	. "github.com/frappuccino2316/go-algorithm/type"
+	t "github.com/frappuccino2316/go-algorithm/type"
 )
 
-func Quicksort(a Ints) []int {
+func Quicksort(a t.Ints) []int {
 	if len(a) < 2 {
 		return a
 	}
